@@ -8,7 +8,7 @@ export default function Layout() {
 
   const addToCart = (item) => {
     setCartItems(prevCartItemState =>
-        [...prevCartItemState, item]
+        [...prevCartItemState, ...item]
     )
   }
 

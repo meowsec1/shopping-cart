@@ -4,6 +4,7 @@ import Card from '../components/Card/Card.jsx';
 
 export default function ShopPage() {
     const [shopItems, setShopItems] = useState([]);
+
     useEffect(() => {
 
         async function fetchData(url) {
