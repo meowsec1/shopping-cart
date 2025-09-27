@@ -13,6 +13,16 @@ export default function Card({ item }) {
                 <span className={styles.ratingScore}>★ {item.rating.rate}/5</span>
                 <span className={styles.ratingCount}>({item.rating.count} reviews)</span>
             </div>
+            <div className={styles.quantitySection}>
+                <div className={styles.quantityControls}>
+                    <input className={styles.quantityInput} type="number" min={0}></input>
+                    <button className={styles.quantityButton}>+</button>
+                    <button className={styles.quantityButton}>-</button>
+                </div>
+            </div>
+            <div>
+                <button className={styles.addToCartButton}>Add to cart</button>
+            </div>
         </div>
     )
 }
