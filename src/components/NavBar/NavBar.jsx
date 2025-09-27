@@ -6,9 +6,21 @@ export default function NavBar({ numCartItems }) {
     return (
         <div className={styles.navbar}>
             <ul className={styles.navitems}>
-                <Link to="/" className={styles.link}><li>Home</li></Link>
-                <Link to="/shop" className={styles.link}> <li>Shop</li></Link>
-                <Link to="/cart" className={styles.link}><li>Cart{numCartItems ? `: ${numCartItems}` : ''}</li></Link>
+                <li>
+                    <Link to="/" className={styles.link}>
+                        <span>Home</span>
+                    </Link>
+                </li>
+                <li>
+                <Link to="/shop" className={styles.link}>
+                    <span>Shop</span>
+                </Link>
+                </li>
+                <li>
+                    <Link to="/cart" className={styles.link}>
+                        <span>Cart{numCartItems ? `: ${numCartItems}` : ''}</span>
+                    </Link>
+                </li>
             </ul>
         </div>
     )

@@ -5,3 +5,7 @@
     margin: 20px;
     align-items: stretch;
 }
+
+* {
+    font-family: sans-serif;
+}

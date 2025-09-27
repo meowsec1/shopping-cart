@@ -1,12 +1,11 @@
 .navbar {
-    background-color: #069668;
+    background: linear-gradient(135deg, #069668 0%, #048a5a 100%);
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
 .navitems {
-    font-family: sans-serif;
     display: flex;
     list-style-type: none;
     gap: 28px;

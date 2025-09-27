@@ -14,7 +14,7 @@ export default function Card({ item }) {
     }
 
     function decrementInput() {
-        if (inputValue > 0) {
+        if (inputValue > 1) {
             setInputValue((prevValue) => prevValue-1)
         }
     }
