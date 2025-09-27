@@ -1,0 +1,23 @@
+.navbar {
+    background-color: rgb(130, 47, 189);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navitems {
+    font-family: sans-serif;
+    display: flex;
+    list-style-type: none;
+    gap: 28px;
+    font-size: 18px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+}
