@@ -7,7 +7,7 @@ import styles from './Card.module.css';
 export default function Card({ item }) {
     const { addToCart } = useOutletContext();
 
-    const [inputValue, setInputValue] = useState(0)
+    const [inputValue, setInputValue] = useState(1)
 
     function incrementInput() {
         setInputValue((prevValue) => prevValue+1)
@@ -30,6 +30,7 @@ export default function Card({ item }) {
         let itemsToAdd = []
         for (let i = 0; i < number; i++) {
             itemsToAdd.push(item)
+            setInputValue(1)
         }
 
         addToCart(itemsToAdd) 

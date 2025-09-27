@@ -10,7 +10,6 @@ export default function ShopPage() {
         async function fetchData(url) {
             const response = await fetch(url);
             const data = await response.json();
-            console.log(data);
             setShopItems(data);
 
         }
@@ -20,7 +19,7 @@ export default function ShopPage() {
     }, [])
     return (
         <div className="card-container">
-        {shopItems.map(item => <Card key={item.id} item={item}>{item.title}</Card>)}
+        {shopItems.map(item => <Card key={item.id} item={item} />)}
         </div>
     )
 }
