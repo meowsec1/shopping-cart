@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+import Card from '../components/Card/Card.jsx';
+
 export default function ShopPage() {
     const [shopItems, setShopItems] = useState([]);
     useEffect(() => {
@@ -16,9 +18,8 @@ export default function ShopPage() {
 
     }, [])
     return (
-        <>
-        {shopItems.map(item => <div key={item.id}>{item.title}</div>)}
-            This is the shop page
-        </>
+        <div className="card-container">
+        {shopItems.map(item => <Card key={item.id} item={item}>{item.title}</Card>)}
+        </div>
     )
 }
